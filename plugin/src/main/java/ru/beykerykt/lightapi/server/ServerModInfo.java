@@ -30,8 +30,8 @@ import ru.beykerykt.lightapi.server.nms.INMSHandler;
 
 public class ServerModInfo {
 
-	private String modName;
-	private Map<String, Class<? extends INMSHandler>> versions;
+	private final String modName;
+	private final Map<String, Class<? extends INMSHandler>> versions;
 
 	public ServerModInfo(String modname) {
 		this.modName = modname;
