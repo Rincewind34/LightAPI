@@ -31,10 +31,10 @@ import java.util.Collection;
 
 public class ChunkInfo {
 
-	private World world;
-	private int x;
+	private final World world;
+	private final int x;
 	private int y;
-	private int z;
+	private final int z;
 	private Collection<? extends Player> receivers;
 
 	@Deprecated
