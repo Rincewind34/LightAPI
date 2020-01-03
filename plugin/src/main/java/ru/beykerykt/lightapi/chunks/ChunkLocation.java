@@ -70,11 +70,7 @@ public class ChunkLocation {
 			return false;
 		}
 		ChunkLocation other = (ChunkLocation) obj;
-		if (world == null) {
-			if (other.world != null) {
-				return false;
-			}
-		} else if (!world.getName().equals(other.world.getName())) {
+		if (world != other.world) {
 			return false;
 		}
 		return x == other.x && z == other.z;
